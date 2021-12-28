@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Gallery;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +14,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+       Gallery::create([
+           'img'=>'img1.jpg',
+           'body'=>'Jhon Doe'
+       ]);
+       Gallery::create([
+        'img'=>'img2.jpg',
+        'body'=>'Sarah Doe'
+    ]);
+    Gallery::create([
+        'img'=>'img3.jpg',
+        'body'=>'Robe Hope'
+    ]);
+        
     }
 }

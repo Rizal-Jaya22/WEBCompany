@@ -8,7 +8,7 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <title>Shine - TailwindCSS Startup and SaaS Landing Page Template</title>
+    <title>Website - Company Profile</title>
 
     <!-- Icon -->
     <link rel="stylesheet" type="text/css" href="css/LineIcons.2.0.css">
@@ -39,22 +39,19 @@
                   <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
                           <li class="nav-item">
-                            <a class="page-scroll active" href="#hero-area">Home</a>
+                            <a class="page-scroll active" href="#Home">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="page-scroll" href="#services">Services</a>
+                            <a class="page-scroll" href="#Portfolio">Portfolio</a>
                           </li>
                           <li class="nav-item">
-                            <a class="page-scroll" href="#feature">feature</a>
+                            <a class="page-scroll" href="#Gallery">Gallery</a>
                           </li>
                           <li class="nav-item">
-                            <a class="page-scroll" href="#team">Team</a>
+                            <a class="page-scroll" href="#Profile">Profile</a>
                           </li>
                           <li class="nav-item">
-                            <a class="page-scroll" href="#testimonial">Testimonial</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="page-scroll" href="#pricing">Pricing</a>
+                            <a class="page-scroll" href="#Blog">Blog</a>
                           </li>
                           <li class="nav-item">
                             <a class="page-scroll" href="#contact">Contact</a>
@@ -62,7 +59,7 @@
                       </ul>
                   </div>
                   <div class="header-btn hidden sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
-                    <a class="text-blue-600 border border-blue-600 px-10 py-3 rounded-full duration-300 hover:bg-blue-600 hover:text-white" href="#feature">FAQ</a>
+                    <a class="text-blue-600 border border-blue-600 px-10 py-3 rounded-full duration-300 hover:bg-blue-600 hover:text-white" href="#Profile">Tentang</a>
                   </div>
               </nav>
           </div>
@@ -71,17 +68,17 @@
     </header>
     <!-- Header Area wrapper End -->
 
-    <!-- Hero Area Start -->
-    <section id="hero-area" class="bg-blue-100 pt-48 pb-10">
+    <!-- Home Area Start -->
+    <section id="Home" class="bg-blue-100 pt-48 pb-10">
       <div class="container">
         <div class="flex justify-between">
           <div class="w-full text-center">
-            <h2 class="text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp" data-wow-delay="1s">Startup and SaaS Landing Page
-              <br class="hidden lg:block"> Built with TailwindCSS</h2>
+            <h2 class="text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp" data-wow-delay="1s">#BikinNyata Ide Kreatif Yang
+              <br class="hidden lg:block"> Kalian Impikan</h2>
             <div class="text-center mb-10 wow fadeInUp" data-wow-delay="1.2s">
               <a href="#"
                 rel="nofollow"
-                class="btn">Download Now</a>
+                class="btn">Buat Sekarang</a>
             </div>
             <div class="text-center wow fadeInUp" data-wow-delay="1.6s">
               <img class="img-fluid mx-auto" src="img/hero.svg" alt="">
@@ -90,16 +87,16 @@
         </div>
       </div>
     </section>
-    <!-- Hero Area End -->
+    <!-- Home Area End -->
 
-    <!-- Services Section Start -->
-    <section id="services" class="py-24">
+    <!-- Portfolio Section Start -->
+    <section id="Portfolio" class="py-24">
       <div class="container">
         <div class="text-center">
           <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Services</h2>
         </div>
         <div class="flex flex-wrap">
-          <!-- Services item -->
+          <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="0.3s">
               <div class="icon text-5xl">
@@ -107,12 +104,11 @@
               </div>
               <div>
                 <h3 class="service-title">Web Development</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
-                  incidunt laborum aspernatur...</p>
+                <p class="text-gray-600">merupakan pekerjaan programmer yang bertugas untuk membuat berbagai aplikasi dan website untuk klien dan perusahaan. Banyak perusahaan berlomba-lomba membuat website. Ini menjadi peluang bagi orang yang ingin terjun di dunia web development....</p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
+          <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="0.6s">
               <div class="icon text-5xl">
@@ -120,12 +116,11 @@
               </div>
               <div>
                 <h3 class="service-title">Graphic Design</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
-                  incidunt laborum aspernatur...</p>
+                <p class="text-gray-600"> salah satu bentuk seni lukis (gambar) untuk menciptakan, atau mengatur elemen rupa seperti ilustrasi, foto, tulisan, dan garis di atas suatu media dengan tujuan untuk diproduksi dan dikomunikasikan sebagai sebuah pesan....</p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
+          <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="0.9s">
               <div class="icon text-5xl">
@@ -133,12 +128,11 @@
               </div>
               <div>
                 <h3 class="service-title">Business Branding</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
-                  incidunt laborum aspernatur...</p>
+                <p class="text-gray-600">merupakan salah satu cara membedakan bisnis Anda dari pesaing dan mengklarifikasi apa yang Anda tawarkan yang membuat bisnis Anda menjadi pilihan yang lebih baik, berbeda, dan memiliki nilai lebih. Branding dibangun untuk menjadi representasi dari bisnis Anda....</p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
+          <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="1.2s">
               <div class="icon text-5xl">
@@ -146,12 +140,12 @@
               </div>
               <div>
                 <h3 class="service-title">Content Writing</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
-                  incidunt laborum aspernatur...</p>
+                <p class="text-gray-600"> penulis konten adalah seorang penulis profesional yang memproduksi konten-konten teks di website atau media online.
+                  ...</p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
+          <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="1.5s">
               <div class="icon text-5xl">
@@ -159,12 +153,11 @@
               </div>
               <div>
                 <h3 class="service-title">App Development</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
-                  incidunt laborum aspernatur...</p>
+                <p class="text-gray-600">Pengembangan aplikasi atau App Development didefinisikan sebagai proses dari awal ide hingga pemantauan setelah peluncuran sebuah aplikasi seluler....</p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
+          <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="1.8s">
               <div class="icon text-5xl">
@@ -172,91 +165,23 @@
               </div>
               <div>
                 <h3 class="service-title">Digital Marketing</h3>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde perspiciatis dicta labore nulla beatae quaerat quia
-                  incidunt laborum aspernatur...</p>
+                <p class="text-gray-600">ialah penggunaan internet dan penggunaan teknologi interaktif lain untuk membuat dan menghubungkan dialog antara perusahaan dan konsumen yang telah teridentifikasi....</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Services Section End -->
-
-
-    <!-- Feature Section Start -->
-    <div id="feature" class="bg-blue-100 py-24">
-      <div class="container">
-        <div class="flex flex-wrap items-center">
-          <div class="w-full lg:w-1/2">
-            <div class="mb-5 lg:mb-0">
-              <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Learn More About Us</h2>
-              
-              <div class="flex flex-wrap">
-                <div class="w-full sm:w-1/2 lg:w-1/2">
-                  <div class="m-3">
-                    <div class="icon text-4xl">
-                      <i class="lni lni-layers"></i>
-                    </div>
-                    <div class="features-content">
-                      <h4 class="feature-title">Built with TailwindCSS</h4>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/2">
-                  <div class="m-3">
-                    <div class="icon text-4xl">
-                      <i class="lni lni-gift"></i>
-                    </div>
-                    <div class="features-content">
-                      <h4 class="feature-title">Free to Use</h4>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/2">
-                  <div class="m-3">
-                    <div class="icon text-4xl">
-                      <i class="lni lni-laptop-phone"></i>
-                    </div>
-                    <div class="features-content">
-                      <h4 class="feature-title">Fully Responsive</h4>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="w-full sm:w-1/2 lg:w-1/2">
-                  <div class="m-3">
-                    <div class="icon text-4xl">
-                      <i class="lni lni-leaf"></i>
-                    </div>
-                    <div class="features-content">
-                      <h4 class="feature-title">Easy to Customize</h4>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full lg:w-1/2">
-            <div class="mx-3 lg:mr-0 lg:ml-3 wow fadeInRight" data-wow-delay="0.3s">
-              <img src="img/feature/img-1.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Feature Section End -->
-
-    <!-- Team Section Start -->
-    <section id="team" class="py-24 text-center">
+    <!-- Portfolio Section End -->
+    <!-- Gallery Section Start -->
+    {{-- @foreach ($galleries as $gallery) --}}
+    <section id="Gallery" class="py-24 text-center">
       <div class="container">
         <div class="text-center">
           <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Team</h2>
         </div>
         <div class="flex flex-wrap justify-center">
-          <!-- Team Item Starts -->
+          <!-- Gallery Item Starts -->
           <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="team-item">
               <div class="team-img relative">
@@ -287,8 +212,9 @@
               </div>
             </div>
           </div>
-          <!-- Team Item Ends -->
-          <!-- Team Item Starts -->
+
+          <!-- Gallery Item Ends -->
+          <!-- Gallery Item Starts -->
           <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="team-item">
               <div class="team-img relative">
@@ -320,8 +246,8 @@
               </div>
             </div>
           </div>
-          <!-- Team Item Ends -->
-          <!-- Team Item Starts -->
+          <!-- Gallery Item Ends -->
+          <!-- Gallery Item Starts -->
           <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="team-item">
               <div class="team-img relative">
@@ -352,51 +278,19 @@
               </div>
             </div>
           </div>
-          <!-- Team Item Ends -->
+          <!-- Gallery Item Ends -->
         </div>
       </div>
     </section>
-    <!-- Team Section End -->
+    <!-- Gallery Section End -->
 
-    <!-- Clients Section Start -->
-    <div id="clients" class="py-16 bg-blue-100">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">As Seen On</h2>
-        </div>
-        <div class="flex flex-wrap justify-center">
-          <div class="w-1/2 md:w-1/4 lg:w-1/4">
-            <div class="m-3 wow fadeInUp" data-wow-delay="0.3s">
-              <img class="client-logo" src="img/clients/img1.svg" alt="">
-            </div>
-          </div>
-          <div class="w-1/2 md:w-1/4 lg:w-1/4">
-            <div class="m-3 wow fadeInUp" data-wow-delay="0.6s">
-              <img class="client-logo" src="img/clients/img2.svg" alt="">
-            </div>
-          </div>
-          <div class="w-1/2 md:w-1/4 lg:w-1/4">
-            <div class="m-3 wow fadeInUp" data-wow-delay="0.9s">
-              <img class="client-logo" src="img/clients/img3.svg" alt="">
-            </div>
-          </div>
-          <div class="w-1/2 md:w-1/4 lg:w-1/4">
-            <div class="m-3 wow fadeInUp" data-wow-delay="1.2s">
-              <img class="client-logo" src="img/clients/img4.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Clients Section End -->
-
-    <!-- Testimonial Section Start -->
-    <section id="testimonial" class="py-24 bg-gray-800">
+    <!-- Profile Section Start -->
+    <section id="Profile" class="py-24 bg-gray-800">
       <div class="container">
         <div class="flex justify-center mx-3">
           <div class="w-full lg:w-7/12">
-            <div id="testimonials" class="testimonials">
-              <!-- testimonial item start -->
+            <div id="Profile" class="Profile">
+              <!-- Profile item start -->
               <div class="item focus:outline-none">
                 <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
                   <div class="text-center">
@@ -406,13 +300,13 @@
                     <img class="rounded-full p-2 w-full" src="img/testimonial/img1.jpg" alt="">
                   </div>
                   <div class="mb-2">
-                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Fajar</h2>
+                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Rizal</h2>
                     <h3 class="font-medium text-white text-sm">Euphoriya</h3>
                   </div>
                 </div>
               </div>
-              <!-- testimonial item end -->
-              <!-- testimonial item start -->
+              <!-- Profile item end -->
+              <!-- Profile item start -->
               <div class="item focus:outline-none">
                 <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
                   <div class="text-center">
@@ -427,8 +321,8 @@
                   </div>
                 </div>
               </div>
-              <!-- testimonial item end -->
-              <!-- testimonial item start -->
+              <!-- Profile item end -->
+              <!-- Profile item start -->
               <div class="item focus:outline-none">
                 <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
                   <div class="text-center">
@@ -443,113 +337,42 @@
                   </div>
                 </div>
               </div>
-              <!-- testimonial item end -->
+              <!-- Profile item end -->
               
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Testimonial Section End -->  
+    <!-- Profile Section End -->  
 
-    <!-- Pricing section Start --> 
-    <section id="pricing" class="py-24">
+    <!-- Blog section Start --> 
+    <section id="Blog" class="py-24">
       <div class="container">
         <div class="flex flex-wrap justify-center md:justify-start">
-          <!-- single pricing table starts -->
-          <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-            <div class="pricing-box wow fadeInLeft" data-wow-delay="1.2s">
-              <div class="mb-3">
-                <h3 class="package-name">Basic</h3>
-              </div>
-              <div class="mb-5">
-                <p class="text-gray-700">
-                  <span class="font-bold text-2xl">$12.90</span>
-                  <span class="font-medium text-sm">/ Month</span>
-                </p>
-              </div>
-              <ul class="mb-16">
-                <li class="text-gray-500 leading-9">Up to 5 projects </li>
-                <li class="text-gray-500 leading-9">Up to 10 collabrators</li>
-                <li class="text-gray-500 leading-9">2gb of storage</li>
-              </ul>
-              <a href="#" class="btn">Get It</a>
-            </div>
-          </div>
-          <!-- single pricing table ends -->
-          <!-- single pricing table starts -->
-          <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-            <div class="pricing-box bg-blue-100 wow fadeInLeft" data-wow-delay="1.2s">
-              <div class="mb-3">
-                <h3 class="package-name">PROFESIONAL</h3>
-              </div>
-              <div class="mb-5">
-                <p class="text-gray-700">
-                  <span class="font-bold text-2xl">$49.90</span>
-                  <span class="font-medium text-sm">/ Month</span>
-                </p>
-              </div>
-              <ul class="mb-16">
-                <li class="text-gray-500 leading-9">Up to 10 projects </li>
-                <li class="text-gray-500 leading-9">Up to 20 collabrators</li>
-                <li class="text-gray-500 leading-9">10gb of storage</li>
-                <li class="text-gray-500 leading-9">Real-time collabration</li>
-              </ul>
-              <a href="#" class="btn">Get It</a>
-            </div>
-          </div>
-          <!-- single pricing table ends -->
-          <!-- single pricing table starts -->
-          <div class="w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3">
-            <div class="pricing-box">
-              <div class="mb-3">
-                <h3 class="package-name">EXPERT</h3>
-              </div>
-              <div class="mb-5">
-                <p class="text-gray-700">
-                  <span class="font-bold text-2xl">$89.90</span>
-                  <span class="font-medium text-sm">/ Month</span>
-                </p>
-              </div>
-              <ul class="mb-16">
-                <li class="text-gray-500 leading-9">unlimited projects </li>
-                <li class="text-gray-500 leading-9">Unlimited collabrators</li>
-                <li class="text-gray-500 leading-9">Unlimited of storage</li>
-                <li class="text-gray-500 leading-9">Real-time collabration</li>
-                <li class="text-gray-500 leading-9">24x7 Support</li>
-              </ul>
-              <a href="#" class="btn">Get It</a>
-            </div>
-          </div>
-          <!-- single pricing table ends -->
+          
         </div>
       </div>
     </section>
-    <!-- Pricing Table Section End -->
+    <!-- Blog Table Section End -->
 
     <!-- carousel-area Section Start -->
     <section class="carousel-area bg-gray-800 py-32">
       <div class="container">
         <div class="flex">
           <div class="w-full relative">
-            <div class="portfolio-carousel">
-              <div>
-                <img class="w-full" src="img/slide/img1.jpg" alt="">
-              </div>
-              <div>
-                <img class="w-full" src="img/slide/img2.jpg" alt="">
-              </div>
-              <div>
-                <img class="w-full" src="img/slide/img3.jpg" alt="">
-              </div>
-              <div>
-                <img class="w-full" src="img/slide/img4.jpg" alt="">
-              </div>
-              <div>
-                <img class="w-full" src="img/slide/img5.jpg" alt="">
-              </div>
-              <div>
-                <img  class="w-full" src="img/slide/img6.jpg" alt="">
+            <div class="item focus:outline-none">
+              <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                <div class="text-center">
+                  <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                </div>
+                <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
+                  <img class="rounded-full p-2 w-full" src="img/testimonial/img1.jpg" alt="">
+                </div>
+                <div class="mb-2">
+                  <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Rizal</h2>
+                  <h3 class="font-medium text-white text-sm">Euphoriya</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -654,55 +477,11 @@
       </div> 
     </section>
     <!-- Contact Section End -->
-  
-    <!-- Map Section Start -->
-    <section id="google-map-area">
-        <div class="mx-6 mb-6">
-            <div class="flex">
-                <div class="w-full">
-                    <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Map Section End -->
-
 	  <!-- Footer Section Start -->
     <footer id="footer" class="bg-gray-800 py-16">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="mx-3 mb-8">
-              <div class="footer-logo mb-3">
-                <img src="img/logo.svg" alt="">
-              </div>
-              <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi quasi, ipsam
-                voluptatem.</p>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="mx-3 mb-8">
-              <h3 class="font-bold text-xl text-white mb-5">Company</h3>
-              <ul>
-                <li><a href="#" class="footer-links">Press Releases</a></li>
-                <li><a href="#" class="footer-links">Mission</a></li>
-                <li><a href="#" class="footer-links">Strategy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="mx-3 mb-8">
-              <h3 class="font-bold text-xl text-white mb-5">About</h3>
-              <ul>
-                <li><a href="#" class="footer-links">Career</a></li>
-                <li><a href="#" class="footer-links">Team</a></li>
-                <li><a href="#" class="footer-links">Clients</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.8s">
-            <div class="mx-3 mb-8">
-              <h3 class="font-bold text-xl text-white mb-5">Find us on</h3>
+        <div class="flex justify-center items-center h-screen">
+          <h3 class="font-bold text-xl text-white">Find us on</h3>
         
               <ul class="social-icons flex justify-start">
                 <li class="mx-2">
@@ -712,24 +491,31 @@
                   </a>
                 </li>
                 <li class="mx-2">
-                  <a href="#"
+                  <a href="https://twitter.com/ieurijal1"
                     class="footer-icon hover:bg-blue-400">
                     <i class="lni lni-twitter-original" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li class="mx-2">
-                  <a href="#"
+                  <a href="https://www.instagram.com/rijaljayan1/"
                     class="footer-icon hover:bg-red-500">
                     <i class="lni lni-instagram-original" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li class="mx-2">
-                  <a href="#"
+                  <a href="https://www.linkedin.com/in/ieu-rijal-a45264229/"
                     class="footer-icon hover:bg-indigo-600">
                     <i class="lni lni-linkedin-original" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
+         
+          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="mx-3 mb-8">
+              
             </div>
           </div>
         </div>
@@ -741,7 +527,7 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full text-center">
-            <p class="text-white">Designed and Developed by <a class="text-white duration-300 hover:text-blue-600" href="https://tailwindtemplates.co" rel="nofollow">TailwindTemplates</a> and <a class="text-white duration-300 hover:text-blue-600" href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+            <p class="text-white">Designed and Developed by <a class="text-white duration-300 hover:text-blue-600" href="https://tailwindtemplates.co" rel="nofollow">Rizal Jayantoro</a></p>
           </div>
         </div>
       </div>
