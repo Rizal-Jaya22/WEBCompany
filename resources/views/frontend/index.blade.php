@@ -24,20 +24,20 @@
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap" class="relative">
       <!-- Navbar Start -->      
-      <div class="navigation fixed top-0 left-0 w-full z-30 duration-300">
+      <div class="fixed top-0 left-0 z-30 w-full duration-300 navigation">
           <div class="container">
-              <nav class="navbar py-2 navbar-expand-lg flex justify-between items-center relative duration-300">
-                  <a class="navbar-brand" href="index.html">
+              <nav class="relative flex items-center justify-between py-2 duration-300 navbar navbar-expand-lg">
+                  <a class="navbar-brand" href="#Home">
                     <img src="img/logo.svg" alt="Logo">
                   </a>
-                  <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="block navbar-toggler focus:outline-none lg:hidden" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="toggler-icon"></span>
                       <span class="toggler-icon"></span>
                       <span class="toggler-icon"></span>
                   </button>
 
-                  <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
+                  <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white shadow collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
+                      <ul class="items-center justify-center mr-auto navbar-nav lg:flex">
                           <li class="nav-item">
                             <a class="page-scroll active" href="#Home">Home</a>
                           </li>
@@ -58,8 +58,8 @@
                           </li>
                       </ul>
                   </div>
-                  <div class="header-btn hidden sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
-                    <a class="text-blue-600 border border-blue-600 px-10 py-3 rounded-full duration-300 hover:bg-blue-600 hover:text-white" href="#Profile">Tentang</a>
+                  <div class="hidden header-btn sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
+                    <a class="px-10 py-3 text-blue-600 duration-300 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white" href="#Profile">Tentang</a>
                   </div>
               </nav>
           </div>
@@ -67,80 +67,89 @@
       <!-- Navbar End -->
     </header>
     <!-- Header Area wrapper End -->
-
+    @foreach ($Homes as $Home)
+        
+    
     <!-- Home Area Start -->
-    <section id="Home" class="bg-blue-100 pt-48 pb-10">
+    <section id="Home" class="pt-48 pb-10 bg-blue-100">
       <div class="container">
         <div class="flex justify-between">
           <div class="w-full text-center">
-            <h2 class="text-4xl font-bold leading-snug text-gray-700 mb-10 wow fadeInUp" data-wow-delay="1s">#BikinNyata Ide Kreatif Yang
-              <br class="hidden lg:block"> Kalian Impikan</h2>
-            <div class="text-center mb-10 wow fadeInUp" data-wow-delay="1.2s">
+            <h2 class="mb-10 text-4xl font-bold leading-snug text-gray-700 wow fadeInUp" data-wow-delay="1s">{{$Home->body}}
+              <br class="hidden lg:block"></h2>
+            <div class="mb-10 text-center wow fadeInUp" data-wow-delay="1.2s">
               <a href="#"
                 rel="nofollow"
                 class="btn">Buat Sekarang</a>
             </div>
             <div class="text-center wow fadeInUp" data-wow-delay="1.6s">
-              <img class="img-fluid mx-auto" src="img/hero.svg" alt="">
+              <img class="mx-auto img-fluid" src="img/hero.svg" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
+    @endforeach
     <!-- Home Area End -->
 
     <!-- Portfolio Section Start -->
+  @if ($portfolios->count())
+
+  
+  
+
+        
     <section id="Portfolio" class="py-24">
       <div class="container">
         <div class="text-center">
-          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Services</h2>
+        <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">{{$portfolios[0]->title}}</h2>
         </div>
         <div class="flex flex-wrap">
           <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="0.3s">
-              <div class="icon text-5xl">
+              <div class="text-5xl icon">
                 <i class="lni lni-cog"></i>
               </div>
               <div>
-                <h3 class="service-title">Web Development</h3>
-                <p class="text-gray-600">merupakan pekerjaan programmer yang bertugas untuk membuat berbagai aplikasi dan website untuk klien dan perusahaan. Banyak perusahaan berlomba-lomba membuat website. Ini menjadi peluang bagi orang yang ingin terjun di dunia web development....</p>
+                <h3 class="service-title">{{$portfolios[1]->title}}</h3>
+                <p class="text-gray-600">{{$portfolios[1]->body}}</p>
               </div>
             </div>
           </div>
           <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="0.6s">
-              <div class="icon text-5xl">
+              <div class="text-5xl icon">
                 <i class="lni lni-bar-chart"></i>
               </div>
               <div>
-                <h3 class="service-title">Graphic Design</h3>
-                <p class="text-gray-600"> salah satu bentuk seni lukis (gambar) untuk menciptakan, atau mengatur elemen rupa seperti ilustrasi, foto, tulisan, dan garis di atas suatu media dengan tujuan untuk diproduksi dan dikomunikasikan sebagai sebuah pesan....</p>
+                <h3 class="service-title">{{$portfolios[2]->title}}</h3>
+                <p class="text-gray-600">{{$portfolios[2]->body}}</p>
               </div>
             </div>
           </div>
           <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="0.9s">
-              <div class="icon text-5xl">
+              <div class="text-5xl icon">
                 <i class="lni lni-briefcase"></i>
               </div>
               <div>
-                <h3 class="service-title">Business Branding</h3>
-                <p class="text-gray-600">merupakan salah satu cara membedakan bisnis Anda dari pesaing dan mengklarifikasi apa yang Anda tawarkan yang membuat bisnis Anda menjadi pilihan yang lebih baik, berbeda, dan memiliki nilai lebih. Branding dibangun untuk menjadi representasi dari bisnis Anda....</p>
+                <h3 class="service-title">{{$portfolios[3]->title}}</h3>
+                <p class="text-gray-600">{{$portfolios[3]->body}}</p>
               </div>
             </div>
           </div>
           <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon text-5xl">
+              <div class="text-5xl icon">
                 <i class="lni lni-pencil-alt"></i>
               </div>
               <div>
-                <h3 class="service-title">Content Writing</h3>
-                <p class="text-gray-600"> penulis konten adalah seorang penulis profesional yang memproduksi konten-konten teks di website atau media online.
+                <h3 class="service-title">{{$portfolios[4]->title}}</h3>
+                <p class="text-gray-600">{{$portfolios[4]->body}}
                   ...</p>
               </div>
             </div>
@@ -148,43 +157,45 @@
           <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="1.5s">
-              <div class="icon text-5xl">
+              <div class="text-5xl icon">
                 <i class="lni lni-mobile"></i>
               </div>
               <div>
-                <h3 class="service-title">App Development</h3>
-                <p class="text-gray-600">Pengembangan aplikasi atau App Development didefinisikan sebagai proses dari awal ide hingga pemantauan setelah peluncuran sebuah aplikasi seluler....</p>
+                <h3 class="service-title">{{$portfolios[5]->title}}</h3>
+                <p class="text-gray-600">{{$portfolios[5]->body}}</p>
               </div>
             </div>
           </div>
           <!-- Portfolio item -->
           <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="m-4 wow fadeInRight" data-wow-delay="1.8s">
-              <div class="icon text-5xl">
+              <div class="text-5xl icon">
                 <i class="lni lni-layers"></i>
               </div>
               <div>
-                <h3 class="service-title">Digital Marketing</h3>
-                <p class="text-gray-600">ialah penggunaan internet dan penggunaan teknologi interaktif lain untuk membuat dan menghubungkan dialog antara perusahaan dan konsumen yang telah teridentifikasi....</p>
+                <h3 class="service-title">{{$portfolios[6]->title}}</h3>
+                <p class="text-gray-600">{{$portfolios[6]->body}}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    @endif
     <!-- Portfolio Section End -->
     <!-- Gallery Section Start -->
     {{-- @foreach ($galleries as $gallery) --}}
+    @if ($galleries->count())
     <section id="Gallery" class="py-24 text-center">
       <div class="container">
         <div class="text-center">
-          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Team</h2>
+          <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">{{$galleries[0]->title}}</h2>
         </div>
         <div class="flex flex-wrap justify-center">
           <!-- Gallery Item Starts -->
           <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="team-item">
-              <div class="team-img relative">
+              <div class="relative team-img">
                 <img class="img-fluid" src="img/team/img1.jpg" alt="">
                 <div class="team-overlay">
                   <ul class="flex justify-center">
@@ -206,9 +217,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="text-center px-5 py-3">
-                <h3 class="team-name">John Doe</h3>
-                <p>UX UI Designer</p>
+              <div class="px-5 py-3 text-center">
+                <h3 class="team-name">{{$galleries[1]->body}}</h3>
+                <p>{{$galleries[1]->subbody}}</p>
               </div>
             </div>
           </div>
@@ -217,7 +228,7 @@
           <!-- Gallery Item Starts -->
           <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="team-item">
-              <div class="team-img relative">
+              <div class="relative team-img">
                 <img class="img-fluid" src="img/team/img2.jpg" alt="">
                 <div
                   class="team-overlay">
@@ -240,9 +251,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="text-center px-5 py-3">
-                <h3 class="team-name">Sarah Doe</h3>
-                <p>Front-End Developer</p>
+              <div class="px-5 py-3 text-center">
+                <h3 class="team-name">{{$galleries[2]->body}}</h3>
+                <p>{{$galleries[2]->subbody}}</p>
               </div>
             </div>
           </div>
@@ -250,7 +261,7 @@
           <!-- Gallery Item Starts -->
           <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
             <div class="team-item">
-              <div class="team-img relative">
+              <div class="relative team-img">
                 <img class="img-fluid" src="img/team/img3.jpg" alt="">
                 <div class="team-overlay">
                   <ul class="flex justify-center">
@@ -272,19 +283,21 @@
                   </ul>
                 </div>
               </div>
-              <div class="text-center px-5 py-3">
-                <h3 class="team-name">Rob Hope</h3>
-                <p>Front-end Developer</p>
+              <div class="px-5 py-3 text-center">
+                <h3 class="team-name">{{$galleries[3]->body}}</h3>
+                <p>{{$galleries[3]->subbody}}</p>
               </div>
             </div>
           </div>
           <!-- Gallery Item Ends -->
         </div>
       </div>
-    </section>
+    </section>              
+   @endif
     <!-- Gallery Section End -->
 
     <!-- Profile Section Start -->
+    @if ($profiles->count())
     <section id="Profile" class="py-24 bg-gray-800">
       <div class="container">
         <div class="flex justify-center mx-3">
@@ -292,48 +305,48 @@
             <div id="Profile" class="Profile">
               <!-- Profile item start -->
               <div class="item focus:outline-none">
-                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                <div class="px-8 py-10 text-center border border-gray-900 rounded md:px-10">
                   <div class="text-center">
-                    <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                    <p class="leading-loose text-gray-600">{{$profiles[0]->body}}</p>
                   </div>
-                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                    <img class="rounded-full p-2 w-full" src="img/testimonial/img1.jpg" alt="">
+                  <div class="w-24 h-24 mx-auto my-3 rounded-full shadow-md">
+                    <img class="w-full p-2 rounded-full" src="{{('img/testimonial/'.$profiles[0]->img)}}" alt="">
                   </div>
                   <div class="mb-2">
-                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Rizal</h2>
-                    <h3 class="font-medium text-white text-sm">Euphoriya</h3>
+                    <h2 class="mb-2 text-lg font-bold text-blue-600 uppercase">{{$profiles[0]->name}}</h2>
+                    <h3 class="text-sm font-medium text-white">{{$profiles[0]->title}}</h3>
                   </div>
                 </div>
               </div>
               <!-- Profile item end -->
               <!-- Profile item start -->
               <div class="item focus:outline-none">
-                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                <div class="px-8 py-10 text-center border border-gray-900 rounded md:px-10">
                   <div class="text-center">
-                    <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                    <p class="leading-loose text-gray-600">{{$profiles[1]->body}}</p>
                   </div>
-                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                    <img class="rounded-full p-2 w-full" src="img/testimonial/img2.jpg" alt="">
+                  <div class="w-24 h-24 mx-auto my-3 rounded-full shadow-md">
+                    <img class="w-full p-2 rounded-full" src="{{('img/testimonial/'.$profiles[1]->img)}}"  alt="">
                   </div>
                   <div class="mb-2">
-                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Mila</h2>
-                    <h3 class="font-medium text-white text-sm">PageBulb</h3>
+                    <h2 class="mb-2 text-lg font-bold text-blue-600 uppercase">{{$profiles[1]->name}}</h2>
+                    <h3 class="text-sm font-medium text-white">{{$profiles[1]->title}}</h3>
                   </div>
                 </div>
               </div>
               <!-- Profile item end -->
               <!-- Profile item start -->
               <div class="item focus:outline-none">
-                <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+                <div class="px-8 py-10 text-center border border-gray-900 rounded md:px-10">
                   <div class="text-center">
-                    <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                    <p class="leading-loose text-gray-600">{{$profiles[2]->body}} </p>
                   </div>
-                  <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                    <img class="rounded-full p-2 w-full" src="img/testimonial/img1.jpg" alt="">
+                  <div class="w-24 h-24 mx-auto my-3 rounded-full shadow-md">
+                    <img class="w-full p-2 rounded-full" src="{{('img/testimonial/'.$profiles[0]->img)}}"  alt="">
                   </div>
                   <div class="mb-2">
-                    <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Rob</h2>
-                    <h3 class="font-medium text-white text-sm">OnePageLove</h3>
+                    <h2 class="mb-2 text-lg font-bold text-blue-600 uppercase">{{$profiles[2]->name}}</h2>
+                    <h3 class="text-sm font-medium text-white">{{$profiles[2 ]->title}}</h3>
                   </div>
                 </div>
               </div>
@@ -344,9 +357,11 @@
         </div>
       </div>
     </section>
+    @endif
     <!-- Profile Section End -->  
 
     <!-- Blog section Start --> 
+    @if ($blogs->count())
     <section id="Blog" class="py-24">
       <div class="container">
         <div class="flex flex-wrap justify-center md:justify-start">
@@ -357,21 +372,21 @@
     <!-- Blog Table Section End -->
 
     <!-- carousel-area Section Start -->
-    <section class="carousel-area bg-gray-800 py-32">
+    <section class="py-32 bg-gray-800 carousel-area">
       <div class="container">
         <div class="flex">
-          <div class="w-full relative">
+          <div class="relative w-full">
             <div class="item focus:outline-none">
-              <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
+              <div class="px-8 py-10 text-center border border-gray-900 rounded md:px-10">
                 <div class="text-center">
-                  <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                  <p class="leading-loose text-gray-600">{{$blogs[0]->body}}</p>
                 </div>
-                <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                  <img class="rounded-full p-2 w-full" src="img/testimonial/img1.jpg" alt="">
+                <div class="w-24 h-24 mx-auto my-3 rounded-full shadow-md">
+                  <img class="w-full p-2 rounded-full" src="{{('img/testimonial/'.$blogs[0]->img)}}" alt="">
                 </div>
                 <div class="mb-2">
-                  <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Rizal</h2>
-                  <h3 class="font-medium text-white text-sm">Euphoriya</h3>
+                  <h2 class="mb-2 text-lg font-bold text-blue-600 uppercase">{{$blogs[0]->name}}</h2>
+                  <h3 class="text-sm font-medium text-white">{{$blogs[0]->title}}</h3>
                 </div>
               </div>
             </div>
@@ -379,111 +394,58 @@
         </div>
       </div>
     </section>
+    @endif
     <!-- carousel-area Section End -->
 
-    <!-- Subscribe Section Start -->
-    <section id="Subscribes" class="text-center py-20 bg-blue-100">
+    <!-- Contact Section Start -->
+    @if ($contacts->count())
+    <section id="contact" class="py-24">    
       <div class="container">
-        <div class="flex justify-center mx-3">
-          <div class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
-            <h4 class="mb-3 section-heading wow fadeInUp" data-wow-delay="0.3s">Start For Free</h4>
-            <p class="mb-4 text-gray-600 leading-loose text-sm wow fadeInUp" data-wow-delay="0.6s">Existing customized ideas through client-based deliverables. <br> Compellingly unleash fully tested outsourcing</p>
-            <form for="">
-              <div class="wow fadeInDown" data-wow-delay="0.3s">
-                <input type="Email" class="w-full mb-5 bg-white border border-blue-300 rounded-full px-5 py-3 duration-300 focus:border-blue-600 outline-none" name="email" placeholder="Email Address">
-                <button class="border-0 bg-blue-600 text-white rounded-full w-12 h-12 duration-300 hover:opacity-75" type="submit"><i class="lni lni-arrow-right"></i></button>
+          <h2 class="mb-12 text-4xl font-bold tracking-wide text-gray-700 wow fadeInDown" data-wow-delay="0.3s">{{$contacts[0]->title}}</h2>
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="ml-3 md:ml-12 wow fadeIn">
+            <h2 class="mb-5 text-xl font-bold text-gray-700 uppercase">{{$contacts[0]->body}}</h2>
+            <div>
+              <div class="flex flex-wrap items-center mb-6">
+                <div class="contact-icon">
+                  <i class="lni lni-map-marker"></i>
+                </div>
+                <p class="pl-3">{{$contacts[0]->lokasi}}</p>
               </div>
-            </form>
+              <div class="flex flex-wrap items-center mb-6">
+                <div class="contact-icon">
+                  <i class="lni lni-envelope"></i>
+                </div>
+                <p class="pl-3">
+                  <a href="#" class="block">{{$contacts[0]->email}}</a>
+                  
+                </p>
+              </div>
+              <div class="flex flex-wrap items-center mb-6">
+                <div class="contact-icon">
+                  <i class="lni lni-phone-set"></i>
+                </div>
+                <p class="pl-3">
+                  <a href="#" class="block">{{$contacts[0]->nohp}}</a>
+              
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Subscribe Section End -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="py-24">    
+    </div> 
+  </section>
+  @endif
+  <!-- Contact Section End -->
+  <!-- Footer Section Start -->
+    <footer id="footer" class="py-16 bg-gray-800">
       <div class="container">
-        <div class="text-center">
-          <h2 class="mb-12 text-4xl text-gray-700 font-bold tracking-wide wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
-        </div>
-
-        <div class="flex flex-wrap contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-          <div class="w-full md:w-1/2">
-            <div class="contact">
-              <h2 class="uppercase font-bold text-xl text-gray-700 mb-5 ml-3">Contact Form</h2>
-              <form id="contactForm" action="contact.php">
-                <div class="flex flex-wrap">
-                  <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
-                    <div class="mx-3">
-                      <input type="text" class="form-input rounded-full" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                    </div>                                 
-                  </div>
-                  <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
-                    <div class="mx-3">
-                      <input type="text" placeholder="Email" id="email" class="form-input rounded-full" name="email" required data-error="Please enter your email">
-                    </div> 
-                  </div>
-                  <div class="w-full">
-                    <div class="mx-3">
-                      <input type="text" placeholder="Subject" id="subject" name="subject" class="form-input rounded-full" required data-error="Please enter your subject">
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <div class="mx-3"> 
-                      <textarea class="form-input rounded-lg" id="message" name="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <div class="submit-button mx-3">
-                      <button class="btn" id="form-submit" type="submit">Send Message</button>
-                    </div>
-                  </div>
-                </div>            
-              </form>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2">
-            <div class="ml-3 md:ml-12 wow fadeIn">
-              <h2 class="uppercase font-bold text-xl text-gray-700 mb-5">Get In Touch</h2>
-              <div>
-                <div class="flex flex-wrap mb-6 items-center">
-                  <div class="contact-icon">
-                    <i class="lni lni-map-marker"></i>
-                  </div>
-                  <p class="pl-3">Skopje, Macedonia</p>
-                </div>
-                <div class="flex flex-wrap mb-6 items-center">
-                  <div class="contact-icon">
-                    <i class="lni lni-envelope"></i>
-                  </div>
-                  <p class="pl-3">
-                    <a href="#" class="block">email@gmail.com</a>
-                    <a href="#" class="block">tomsaulnier@gmail.com</a>
-                  </p>
-                </div>
-                <div class="flex flex-wrap mb-6 items-center">
-                  <div class="contact-icon">
-                    <i class="lni lni-phone-set"></i>
-                  </div>
-                  <p class="pl-3">
-                    <a href="#" class="block">+42 374 5967</a>
-                    <a href="#" class="block">+99 123 5967</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </section>
-    <!-- Contact Section End -->
-	  <!-- Footer Section Start -->
-    <footer id="footer" class="bg-gray-800 py-16">
-      <div class="container">
-        <div class="flex justify-center items-center h-screen">
-          <h3 class="font-bold text-xl text-white">Find us on</h3>
+        <div class="flex items-center justify-center h-screen">
+          <h3 class="text-xl font-bold text-white">Find us on</h3>
         
-              <ul class="social-icons flex justify-start">
+              <ul class="flex justify-start social-icons">
                 <li class="mx-2">
                   <a href="#"
                     class="footer-icon hover:bg-indigo-500">
@@ -523,7 +485,7 @@
     </footer> 
     <!-- Footer Section End -->
 
-    <section class="bg-gray-800 py-6 border-t-2 border-gray-700 border-dotted">
+    <section class="py-6 bg-gray-800 border-t-2 border-gray-700 border-dotted">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full text-center">
@@ -534,7 +496,7 @@
     </section>   
 
     <!-- Go to Top Link -->
-    <a href="#" class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full bg-blue-600 text-white text-lg z-20 duration-300 hover:bg-blue-400">
+    <a href="#" class="fixed bottom-0 right-0 z-20 flex items-center justify-center w-10 h-10 mb-5 mr-5 text-lg text-white duration-300 bg-blue-600 rounded-full back-to-top hover:bg-blue-400">
       <i class="lni lni-arrow-up"></i>
     </a>
     

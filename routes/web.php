@@ -1,7 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Portfolio;
+use App\Models\Home;
 use App\Models\Gallery;
+use App\Models\Profile;
+use App\Models\Blog;
+use App\Models\Contact;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +23,15 @@ use App\Models\Gallery;
 // });
 
 Route::get('/', function () {
-    return view('frontend.index');
+    return view('frontend.index',[
+        'Homes'=>Home::all(),
+         'portfolios'=>Portfolio::all(),
+         'galleries'=>Gallery::all(),
+         'profiles'=>Profile::all(),
+         'blogs'=>Blog::all(),
+         'contacts'=>Contact::all()
+
+    ]);
 });
 
 
@@ -27,8 +40,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::get('/gallery', function () {
-    return view('frontend.index',[
-        'galleries'=>Gallery::all()
-    ]);
-});
+// Route::get('/gallery', function () {
+//     return view('frontend.index',[
+       
+//     ]);
