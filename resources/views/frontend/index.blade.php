@@ -19,13 +19,15 @@
     <!-- Tailwind css -->
     <link rel="stylesheet" type="text/css" href="css/tailwind.css">
   </head>
+
   <body>
 
     <!-- Header Area wrapper Starts -->
-    <header id="header-wrap" class="relative">
+    {{-- <header id="header-wrap" class="relative">
       <!-- Navbar Start -->      
       <div class="fixed top-0 left-0 z-30 w-full duration-300 navigation">
           <div class="container">
+          @include('frontend.Nav')
               <nav class="relative flex items-center justify-between py-2 duration-300 navbar navbar-expand-lg">
                   <a class="navbar-brand" href="#Home">
                     <img src="img/logo.svg" alt="Logo">
@@ -39,10 +41,10 @@
                   <div class="absolute left-0 z-20 hidden w-full px-5 py-3 duration-300 bg-white shadow collapse navbar-collapse lg:block top-100 mt-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
                       <ul class="items-center justify-center mr-auto navbar-nav lg:flex">
                           <li class="nav-item">
-                            <a class="page-scroll active" href="#Home">Home</a>
+                            <a class="page-scroll active" href="/Home">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="page-scroll" href="#Portfolio">Portfolio</a>
+                            <a class="page-scroll" href="/Portfolio">Portfolio</a>
                           </li>
                           <li class="nav-item">
                             <a class="page-scroll" href="#Gallery">Gallery</a>
@@ -63,11 +65,12 @@
                   </div>
               </nav>
           </div>
-      </div>
+      </div> --}}
       <!-- Navbar End -->
-    </header>
+    {{-- </header> --}}
+    @yield('Home')
     <!-- Header Area wrapper End -->
-    @foreach ($Homes as $Home)
+    {{-- @foreach ($Homes as $Home)
         
     
     <!-- Home Area Start -->
@@ -89,11 +92,12 @@
         </div>
       </div>
     </section>
-    @endforeach
+    @endforeach --}}
+    
     <!-- Home Area End -->
-
+  @yield('Portfolio')
     <!-- Portfolio Section Start -->
-  @if ($portfolios->count())
+  {{-- @if ($portfolios->count())
 
   
   
@@ -181,11 +185,11 @@
         </div>
       </div>
     </section>
-    @endif
+    @endif --}}
     <!-- Portfolio Section End -->
     <!-- Gallery Section Start -->
     {{-- @foreach ($galleries as $gallery) --}}
-    @if ($galleries->count())
+    {{-- @if ($galleries->count())
     <section id="Gallery" class="py-24 text-center">
       <div class="container">
         <div class="text-center">
@@ -437,7 +441,7 @@
       </div>
     </div> 
   </section>
-  @endif
+  @endif --}}
   <!-- Contact Section End -->
   <!-- Footer Section Start -->
     <footer id="footer" class="py-16 bg-gray-800">

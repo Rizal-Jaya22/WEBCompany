@@ -19,7 +19,9 @@ class CreateGalleriesTable extends Migration
             $table->string('img');
             $table->text('body');
             $table->text('subbody');
+            $table->text('video');
             $table->timestamps();
+
         });
     }
 

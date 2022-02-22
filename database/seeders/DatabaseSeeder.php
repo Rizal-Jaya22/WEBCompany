@@ -25,26 +25,31 @@ class DatabaseSeeder extends Seeder
             'title'=>'Our Team',
             'img'=>'',
             'body'=>'',
-            'subbody'=>''
+            'subbody'=>'',
+            'video'=>''
         ]);
 
        Gallery::create([
             'title'=>'',
            'img'=>'img1.jpg',
-           'body'=>'Jhon Doe',
-           'subbody'=>'UX UI Designer'
+           'body'=>'',
+           'subbody'=>'',
+           'video'=>'voli.mp4'
        ]);
        Gallery::create([
         'title'=>'',
         'img'=>'img2.jpg',
-        'body'=>'Sarah Doe',
-        'subbody'=>'Front-End Developer'
+        'body'=>'',
+        'subbody'=>'',
+        'video'=>'voli1.mp4'
+
     ]);
     Gallery::create([
         'title'=>'',
         'img'=>'img3.jpg',
-        'body'=>'Robe Hope',
-        'subbody'=>'Front-end Developer'
+        'body'=>'',
+        'subbody'=>'',
+        'video'=>'voli2.mp4'
     ]);
 
     Portfolio::create([
@@ -88,30 +93,42 @@ class DatabaseSeeder extends Seeder
 
     Profile::create([
         'title'=>'Euphoriya',
-        'body'=>'Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness.',
+        'body'=>'',
         'img'=>'img1.jpg',
         'name'=>'RIZAL'
     ]);
 
     Profile::create([
         'title'=>'PageBulb',
-        'body'=>'Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness.',
+        'body'=>'',
         'img'=>'img2.jpg',
         'name'=>'Mila'
     ]);
 
     Profile::create([
         'title'=>'OnePageLove',
-        'body'=>'Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness.',
+        'body'=>'',
         'img'=>'img3.jpg',
         'name'=>'ROB'
     ]);
 
     Blog::create([
-        'title'=>'Euphoriya',
-        'body'=>'Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness.',
-        'img'=>'img1.jpg',
-        'name'=>'RIZAL'
+        'title'=>'Is remote work working? A one year check-in',
+        'body'=>'30',
+        'img'=>'blog1.jpeg',
+        'name'=>'Februari'
+    ]);
+    Blog::create([
+        'title'=>'10 ways to keep your remote teams engaged',
+        'body'=>'29',
+        'img'=>'blog2.jpeg',
+        'name'=>'Februari'
+    ]);
+    Blog::create([
+        'title'=>'How to make a concept map (+Examples)',
+        'body'=>'28',
+        'img'=>'blog3.jpeg',
+        'name'=>'Februari'
     ]);
 
     Contact::create([
